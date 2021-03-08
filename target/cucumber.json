@@ -1,0 +1,97 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-08T06:51:46.225Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1864299837,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login_StepDef.setup()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Positive scenario to test login functinonality",
+        "description": "",
+        "id": "login-into-amazon-website;positive-scenario-to-test-login-functinonality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 561371604,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login_StepDef.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1490607652,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user has opened amazon wevsite on chrome browser",
+            "match": {
+              "location": "Login_StepDef.user_has_opened_amazon_wevsite_on_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2565525685,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User enters correct \"abcd@xyz.com\" and \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcd@xyz.com",
+                  "offset": 21
+                },
+                {
+                  "val": "abc123",
+                  "offset": 40
+                }
+              ],
+              "location": "Login_StepDef.user_enters_correct_something_and_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 420324,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user should be able to login",
+            "match": {
+              "location": "Login_StepDef.user_should_be_able_to_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Login into amazon website",
+    "description": "",
+    "id": "login-into-amazon-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/test/Login2.feature",
+    "tags": []
+  }
+]
